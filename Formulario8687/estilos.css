@@ -1,0 +1,40 @@
+
+section {
+	border-radius: 10px;
+	background-color: #ddd;
+	width: 40%;
+	margin: 10px auto;
+	padding: 20px;
+	font-family: calibri, sans-serif;
+  }
+  
+  section h1 {
+	margin-top: 0;
+	text-align: center;  
+  }
+
+	#a , input [type=text], input[type=password], input[type=file]{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	}
+
+  input[type=submit],
+  input[type=reset] {
+	display: block;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	background-color: #11b4dd;
+	border: 1px solid #000;
+	cursor: pointer;
+  }
+  
+  fieldset {
+	border: 1px solid #000;
+	margin: 8px 0;
+  }
+  
+  * {
+	box-sizing: border-box;	
+  }

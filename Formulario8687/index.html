@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+	<head>
+		<title>Formulario de login</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+	</head>
+	
+	<body>
+		<section>
+			<h1>Formulario 86 e 87</h1>
+			<form action="processa.php" method="post" enctype="multipart/form-data">
+				<label for="Marca" id="a">
+					Marca:
+				</label>
+				<input type="text" name="nome" id="nome" maxlength = “10” required = “required” />
+                
+                <fieldset>
+					<legend>
+						Combustivel:
+					</legend>
+					<div>
+						<input type="checkbox" name="p2" value="a" id="p2_a" />
+						<label for="p2_a">
+							Alcool
+						</label>
+					</div>
+					<div>
+						<input type="checkbox" name="p2" value="b" id="p2_b" />
+						<label for="p2_b">
+							Gasolina
+						</label>
+					</div>
+								
+				</fieldset>
+                <fieldset>
+					<legend>
+						Motor 
+					</legend>
+					<div>
+						<input type="radio" name="p1" value="a" id="p1_a" checked />
+						<label for="p1_a">
+							1.0
+						</label>
+					</div>
+					<div>
+						<input type="radio" name="p1" value="b" id="p1_b" />
+						<label for="p1_b">
+							1.6
+						</label>
+					</div>
+                    <div>
+						<input type="radio" name="p1" value="b" id="p1_b" />
+						<label for="p1_b">
+							2.0
+						</label>
+					</div>
+				</fieldset>
+                <fieldset>
+					<legend>
+						Cambio:
+					</legend>
+					<div>
+						<input type="checkbox" name="p2" value="a" id="p2_a" />
+						<label for="p2_a">
+							Automatico
+						</label>
+					</div>
+					<div>
+						<input type="checkbox" name="p2" value="b" id="p2_b" />
+						<label for="p2_b">
+							Manual
+						</label>
+					</div>
+								
+				</fieldset>
+
+                <label for="c_desc" id="a">
+					Descrição:
+				</label>
+				<input type="text" name="desc" id="c_desc" />
+
+                <label for = “data”>
+                    Data de facricação:
+                    </label>
+                <input type = “date” name = “data” min = “1900-01-01” id = “data” placeholder="aaaa-mm-dd"/>
+
+                <label for = “data”>
+                    Data de aquisição:
+                    </label>
+                <input type = “date” name = “data” min = “1900-01-01” id = “data” placeholder="aaaa-mm-dd"/>
+
+                <label for = "hora">
+                    Hora da aquisição
+                </label>
+                <input type="time" name = "hora" placeholder="hh:mm:ss"/>
+
+                <label for = "semana">
+                    Semana da aquisição
+                </label>
+                <input type="week" name = "semana" placeholder="aaaa-Wss"/>
+
+				<input type="submit" name="botao" value="Enviar" />
+				<input type="reset" name="botao" value="Apagar" />
+			</form>
+		</section>
+	</body>
+
+</html>
