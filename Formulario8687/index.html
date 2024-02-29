@@ -15,8 +15,8 @@
 				<label for="Marca" id="a">
 					Marca:
 				</label>
-				<input type="text" name="nome" id="nome" maxlength = “10” required = “required” />
-                
+				<input type="text" name="marca" id="marca" maxlength = “10” required = “required” />
+            
                 <fieldset>
 					<legend>
 						Combustivel:
@@ -82,29 +82,39 @@
 				</label>
 				<input type="text" name="desc" id="c_desc" />
 
-                <label for = “data”>
+                <label for = “data” id="a">
                     Data de facricação:
                     </label>
                 <input type = “date” name = “data” min = “1900-01-01” id = “data” placeholder="aaaa-mm-dd"/>
 
-                <label for = “data”>
+                <label for = “data” id="a">
                     Data de aquisição:
                     </label>
                 <input type = “date” name = “data” min = “1900-01-01” id = “data” placeholder="aaaa-mm-dd"/>
 
-                <label for = "hora">
-                    Hora da aquisição
+                <label for = "hora" id="a">
+                    Hora da aquisição:
                 </label>
                 <input type="time" name = "hora" placeholder="hh:mm:ss"/>
 
-                <label for = "semana">
-                    Semana da aquisição
+                <label for = "semana" id="a">
+                    Semana da aquisição:
                 </label>
                 <input type="week" name = "semana" placeholder="aaaa-Wss"/>
 
-				<input type="submit" name="botao" value="Enviar" />
-				<input type="reset" name="botao" value="Apagar" />
-			</form>
+			<label for="preco" id="a">
+				Preço:
+			</label>
+			<input type="text" name="preco" id="preco" min="0" required = “required” />
+
+			<label for="email" id="a">
+				Email:
+			</label>
+			<input type="text" name="email" id="email" required = “required” />
+
+			<input type="submit" name="botao" value="Enviar" />
+			<input type="reset" name="botao" value="Apagar" />
+		</form>
 		</section>
 	</body>
 

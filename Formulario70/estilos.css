@@ -1,43 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('fundo.jpg') fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
 
 section {
-	border-radius: 10px;
-	background-color: #ddd;
-	width: 40%;
-	margin: 10px auto;
-	padding: 20px;
-	font-family: calibri, sans-serif;
-  }
-  
-  section h1 {
-	margin-top: 0;
-	text-align: center;  
-  }
+    width: 40%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-	#a{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	
-	}
-	
-  input[type=submit],
-  input[type=reset] {
-	display: block;
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	background-color: #11b4dd;
-	border: 1px solid #037083;
-	cursor: pointer;
-	border-radius: 10px;
-  }
-  
-  fieldset {
-	border: 1px solid #037083;
-	margin: 8px 0;
-	border-radius: 10px;
-  }
-  
-  * {
-	box-sizing: border-box;	
-  }
+h1 {
+    text-align: center;
+    color: #082a41;
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="submit"],
+input[type="reset"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 49%;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #2980b9;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+#a {
+    font-weight: bold;
+    color: #2980b9;
+}
+
