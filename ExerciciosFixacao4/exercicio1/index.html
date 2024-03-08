@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+	<head>
+		<title>Problema 3</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
+	</head>
+	
+	<body>
+		<section>
+			<h2>Problema 3 - Validação de dados</h2>
+			<form action="processa.php" method="post" name="form" id="f1">
+				<label for="nome">
+					Nome:
+				</label>
+				<input type="text" name="nome" id="nome" required="required" pattern = "[a-zA-Z]{2,}(\s[a-zA-Z]{2,})+" title="O nome deve ter duas palavras com mais de duas letras, separadas por espaço" />
+				
+				<label for="Foto">
+					Foto:
+				</label>
+				<input type="file" name="foto" id="foto" accept="image/jpeg" multiple title="Insira a foto"/>
+
+				<label for="rg">
+					Rg:
+				</label>
+				<input type="text" name="rg" id="rg" min="12" pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" title="Formato permitido: 00.000.000-0" />
+				
+				<label for="Placa">
+					Placa:
+				</label>
+				<input type="text" name="placa" id="placa" pattern="[A-Z]{3}-\d{4}" title="Formato permitido: AAA-0000"/>
+				
+				<input type="submit" name="submeter" value="OK" />
+			</form>
+		</section>
+		
+		
+	</body>
+
+</html>
