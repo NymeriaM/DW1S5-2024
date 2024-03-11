@@ -1,4 +1,4 @@
-function validarSenha() {
+function validarFormulario() {
     var email = document.getElementById('email').value;
     var senha = document.getElementById('senha').value;
     var confirmarSenha = document.getElementById('confirmarSenha').value;
@@ -7,7 +7,8 @@ function validarSenha() {
         alert("As senhas não coincidem.");
         return false;
     }
-    if (!validarEmail()) {
+
+    if (!validarEmail(email)) {
         alert("Por favor, insira um endereço de e-mail válido.");
         return false;
     }
@@ -15,13 +16,13 @@ function validarSenha() {
     return true;
 }
 
-function validarEmail() {
-    var campoEmail = document.getElementById('email');
-
-    if (!campoEmail.validity.valid) {
-        alert("Email inválido!");
+function validarEmail(email) {
+    
+    var valor = /^[a-zA-Z0-9._%+-]+@(aluno\.)?ifsp\.edu\.br$/;
+    if (valor.test(email)) {
+        return true;
+    } else {
         return false;
     }
-
-    return true;
 }
+
